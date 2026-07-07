@@ -42,7 +42,6 @@ export default function Home() {
     <div className="min-h-screen flex flex-col justify-between font-sans relative p-4 md:p-8">
       <nav className="w-full flex justify-between items-center border-4 border-black bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-12">
         <span className="font-mono font-bold tracking-tighter text-xl bg-[#CCFF00] px-2 border-2 border-black">⚡ GITPULSE</span>
-        <button className="bg-black text-white font-bold px-4 py-1 text-sm border-2 border-black">SIGN IN</button>
       </nav>
 
       <main className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-7xl w-full mx-auto my-auto">
