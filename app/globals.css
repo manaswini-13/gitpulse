@@ -1,15 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  body {
-    background-color: #F4F4F0;
-    background-image: 
-      linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
-    background-size: 20px 20px;
-  }
+@theme {
+  --animate-wipe: gp-wipe-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-marquee: gp-marquee 10s linear infinite;
+}
+
+body {
+  background-color: #F4F4F0;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
 @keyframes gp-wipe-in {
@@ -17,15 +18,7 @@
   to { clip-path: inset(0 0 0 0); }
 }
 
-.animate-wipe {
-  animation: gp-wipe-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
 @keyframes gp-marquee {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
-}
-
-.animate-marquee {
-  animation: gp-marquee 10s linear infinite;
 }
